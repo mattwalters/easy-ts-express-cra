@@ -2,12 +2,14 @@
 Uses ts-node-esm to run
 You can run
 ```
+cd server
 npm run start
 ```
 to start the server on port 4000.
 
 and you can run
 ```
+cd server
 npm run script
 ```
 to run some arbitrary code in `src/script.ts`.
@@ -22,4 +24,8 @@ Hash "Proxy" configured to be able to just hit the api at a relative path
 
 `lodash` is installed
 
-Use `npm run start` to get it running.
+To start the dev server for the client use
+```
+cd client
+npm run start
+```
