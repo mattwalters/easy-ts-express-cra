@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import logo from "./logo.svg";
+import { map } from "lodash";
 import "./App.css";
+
+const ideas = ["idea 1", "idea 2", "idea 3"];
 
 function App() {
   const [time, setTime] = useState();
@@ -20,6 +23,11 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <div>
+          {map(ideas, (idea) => {
+            return <div>{idea}</div>;
+          })}
+        </div>
         <p>The current time is {time}</p>
         <a
           className="App-link"
